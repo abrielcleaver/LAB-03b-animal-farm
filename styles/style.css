@@ -1,3 +1,7 @@
+body {
+    background-color: rgba(4, 60, 4, 0.632);
+}
+
 header {
     background-color: #e9d53f;
     height: 110px;
@@ -9,16 +13,21 @@ header {
 h1 {
     font-family: 'Monteserrat', sans-serif;
     font-weight: 300;
+
 }
 header img {
     height: 100%;
     object-fit: contain;
 }
-h2 {
-    display: flex;
-    justify-content: center;
-    font-family: 'Monteserrat', sans-serif;
-    font-weight: 100;
+
+#animal-names {
+   display: flex;
+   justify-content: center;
+   justify-content: space-evenly;
+   grid-template-columns: repeat(auto-fit, minmax (200px, 1fr));
+   margin-top: 10px;
+   padding-top: 5px;
+   padding-bottom: 10px;
 }
 
 #animals {
@@ -27,6 +36,35 @@ h2 {
     justify-content: center;
     justify-content: space-evenly;
     grid-template-columns: repeat(auto-fit, minmax (200px, 1fr));
+}
+
+#cat-image {
+    border-radius: 20px;
+}
+
+#horse-image {
+    border-radius: 20px;
+}
+
+#dog-image {
+    border-radius: 20px;
+}
+
+#click-image-text {
+    padding-top: 30px ;
+    color: #e9d53f;
+}
+
+#or {
+    color: white; 
+    font-weight: bold;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Monteserrat', sans-serif;
+    font-weight: 100;
+    color: #e9d53f;
 }
 
 footer {

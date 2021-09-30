@@ -21,3 +21,18 @@ const dogAudio = document.getElementById('dog-audio');
 dogImg.addEventListener('click', () => {
   dogAudio.play();
 })
+
+document.addEventListener('keydown', function(event){
+  if (event.code == 'KeyC') { catAudio.play();
+  }
+})
+
+document.addEventListener('keydown', function(event){
+  if (event.code == 'KeyH') { horseAudio.play();
+  }
+})
+
+document.addEventListener('keydown', function(event){
+  if (event.code == 'KeyD') { dogAudio.play();
+  }
+})
